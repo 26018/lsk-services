@@ -1,0 +1,21 @@
+spring:
+  mail:
+    suppliers:
+      - host: smtp.qq.com
+        username: 2033471349@qq.com
+        password: tbxjsexmhrqidjae
+        default-encoding: utf-8
+        transport:
+          protocol: smtp
+      - host: smtp.qq.com
+        username: 3213939691@qq.com
+        password: kyeajnswkcthdcfd
+        default-encoding: utf-8
+        transport:
+          protocol: smtp
+      - host: smtp.qq.com
+        username: 2721819617@qq.com
+        password: kaaniridabzhdccg
+        default-encoding: utf-8
+        transport:
+          protocol: smtp
