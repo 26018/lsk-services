@@ -1,7 +1,6 @@
 package top.fixyou.mail.service.impl;
 
 import lombok.extern.slf4j.Slf4j;
-import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 import org.thymeleaf.TemplateEngine;
 import org.thymeleaf.context.Context;
@@ -29,12 +28,9 @@ import java.util.Properties;
 public class MailServiceImpl implements MailService {
 
     @Resource
-    MailSupplierImpl mailSupplier;
+    private MailSupplier mailSupplier;
     @Resource
     TemplateEngine templateEngine;
-
-    @Value("${spring.mail.log}")
-    Boolean logAble;
 
     /**
      * 同步发送
@@ -49,7 +45,7 @@ public class MailServiceImpl implements MailService {
             Transport transport = provide.getTransport();
             Properties properties = provide.getProperties();
             // 获取发件人
-            String fromMail = String.valueOf(properties.get(MailSupplier.mail_prefix + "username"));
+            String fromMail = String.valueOf(properties.get(MailSupplier.MAIL_PREFIX + "username"));
             // 创建邮件
             MimeMessage message = new MimeMessage(session);
             message.setFrom(new InternetAddress(fromMail));
@@ -65,7 +61,7 @@ public class MailServiceImpl implements MailService {
             message.setContent(htmlString, "text/html;charset=utf-8");
             // 发送邮件
             transport.sendMessage(message, message.getAllRecipients());
-            if (logAble) {
+            if (mailSupplier.mailConfiguration.getLogAble()) {
                 log.info("邮件发送 ----- 发件人：{}，收件人：{}，模板：{}，参数：{}", fromMail, address, mailRequest.getTemplate(), mailRequest.getParams());
             }
         } catch (Exception exception) {
@@ -78,7 +74,7 @@ public class MailServiceImpl implements MailService {
     /**
      * 异步发送
      */
-    public void sendSync(MailRequest mailRequest) {
+    public void asyncSend(MailRequest mailRequest) {
         // TODO 改为线程池
         @SuppressWarnings("AlibabaAvoidManuallyCreateThread")
         Thread thread = new Thread(() -> send(mailRequest));

@@ -3,15 +3,12 @@ package top.fixyou.api.controller;
 import org.springframework.web.bind.annotation.*;
 import top.fixyou.base.result.ResponseResult;
 import top.fixyou.mail.config.MailConfiguration;
-import top.fixyou.mail.entity.MailConnector;
-import top.fixyou.mail.entity.MailProperties;
+import top.fixyou.mail.entity.MailProperty;
 import top.fixyou.mail.entity.MailRequest;
 import top.fixyou.mail.service.MailSupplier;
 import top.fixyou.mail.service.impl.MailServiceImpl;
-import top.fixyou.mail.service.impl.MailSupplierImpl;
 
 import javax.annotation.Resource;
-import java.util.ArrayDeque;
 import java.util.List;
 
 
@@ -30,13 +27,12 @@ public class MailController {
 
     @PostMapping("/send")
     public ResponseResult<String> sendMail(@RequestBody MailRequest mailRequest) {
-        mailService.sendSync(mailRequest);
+        mailService.asyncSend(mailRequest);
         return ResponseResult.ok();
     }
 
     @GetMapping("/connector-info")
-    public ResponseResult<List<MailProperties>> connectorsInfo() {
-
+    public ResponseResult<List<MailProperty>> connectorsInfo() {
         return ResponseResult.ok(null);
     }
 }

@@ -19,5 +19,4 @@ public interface MailService {
      */
     void send(MailRequest mailRequest);
 
-//    List<Void> connectorInfo();
 }

@@ -5,23 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="45ebbc3d-0d0e-4fa1-b269-60864c994af6" name="变更" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lsk-api/lsk-api.iml" beforeDir="false" afterPath="$PROJECT_DIR$/lsk-api/lsk-api.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lsk-api/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/lsk-api/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lsk-api/src/main/java/top/fixyou/api/LskApiApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/lsk-api/src/main/java/top/fixyou/api/LskApiApplication.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lsk-api/src/main/java/top/fixyou/api/controller/MailController.java" beforeDir="false" afterPath="$PROJECT_DIR$/lsk-api/src/main/java/top/fixyou/api/controller/MailController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lsk-api/src/main/java/top/fixyou/api/controller/TestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/lsk-api/src/main/java/top/fixyou/api/controller/TestController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lsk-api/src/main/resources/application-mailmanager.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/lsk-api/src/main/resources/application-mailmanager.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lsk-api/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/lsk-api/src/main/resources/application.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lsk-api/target/classes/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/lsk-api/target/classes/application.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lsk-api/target/classes/top/fixyou/api/LskApiApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/lsk-api/target/classes/top/fixyou/api/LskApiApplication.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lsk-api/target/classes/top/fixyou/api/controller/TestController.class" beforeDir="false" afterPath="$PROJECT_DIR$/lsk-api/target/classes/top/fixyou/api/controller/TestController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lsk-api/target/classes/application-mailmanager.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/lsk-api/target/classes/application-mailmanager.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lsk-api/target/classes/top/fixyou/api/controller/MailController.class" beforeDir="false" afterPath="$PROJECT_DIR$/lsk-api/target/classes/top/fixyou/api/controller/MailController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lsk-base/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lsk-mail/src/main/java/top/fixyou/mail/config/MailConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/lsk-mail/src/main/java/top/fixyou/mail/config/MailConfiguration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lsk-mail/src/main/java/top/fixyou/mail/entity/MailProperties.java" beforeDir="false" afterPath="$PROJECT_DIR$/lsk-mail/src/main/java/top/fixyou/mail/entity/MailProperty.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lsk-mail/src/main/java/top/fixyou/mail/service/MailService.java" beforeDir="false" afterPath="$PROJECT_DIR$/lsk-mail/src/main/java/top/fixyou/mail/service/MailService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lsk-mail/src/main/java/top/fixyou/mail/service/MailSupplier.java" beforeDir="false" afterPath="$PROJECT_DIR$/lsk-mail/src/main/java/top/fixyou/mail/service/MailSupplier.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lsk-mail/src/main/java/top/fixyou/mail/service/impl/MailServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/lsk-mail/src/main/java/top/fixyou/mail/service/impl/MailServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lsk-mail/src/main/java/top/fixyou/mail/service/impl/MailSupplierImpl.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -143,7 +138,7 @@
       <workItem from="1677473417494" duration="202000" />
       <workItem from="1677473625369" duration="1024000" />
       <workItem from="1677479431867" duration="14256000" />
-      <workItem from="1677542565109" duration="312000" />
+      <workItem from="1677542565109" duration="6715000" />
     </task>
     <servers />
   </component>

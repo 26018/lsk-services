@@ -1,6 +1,6 @@
 spring:
   mail:
-    log: false
+    log-able: false
     mail-properties:
       - host: smtp.qq.com
         username: 2033471349@qq.com
@@ -20,6 +20,7 @@ spring:
         default-encoding: utf-8
         transport:
           protocol: smtp
+
 
 
 

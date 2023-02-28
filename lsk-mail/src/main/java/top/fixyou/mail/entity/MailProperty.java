@@ -11,7 +11,7 @@ import lombok.Data;
 
 
 @Data
-public class MailProperties {
+public class MailProperty {
 
     String host;
     String username;
