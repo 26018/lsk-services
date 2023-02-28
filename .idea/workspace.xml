@@ -5,13 +5,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="45ebbc3d-0d0e-4fa1-b269-60864c994af6" name="变更" comment="">
-      <change afterPath="$PROJECT_DIR$/lsk-api/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lsk-api/src/main/java/top/fixyou/api/LskApiApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lsk-api/src/main/java/top/fixyou/api/config/SwaggerConfiguration.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lsk-api/src/main/java/top/fixyou/api/config/SwaggerProperties.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lsk-api/src/main/java/top/fixyou/api/controller/TestController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lsk-api/src/main/resources/application.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lsk-api/src/test/java/top/fixyou/api/LskApiApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lsk-api/lsk-api.iml" beforeDir="false" afterPath="$PROJECT_DIR$/lsk-api/lsk-api.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lsk-api/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/lsk-api/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lsk-api/src/main/java/top/fixyou/api/LskApiApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/lsk-api/src/main/java/top/fixyou/api/LskApiApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lsk-api/src/main/java/top/fixyou/api/controller/MailController.java" beforeDir="false" afterPath="$PROJECT_DIR$/lsk-api/src/main/java/top/fixyou/api/controller/MailController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lsk-api/src/main/java/top/fixyou/api/controller/TestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/lsk-api/src/main/java/top/fixyou/api/controller/TestController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lsk-api/src/main/resources/application-mailmanager.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/lsk-api/src/main/resources/application-mailmanager.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lsk-api/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/lsk-api/src/main/resources/application.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lsk-api/target/classes/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/lsk-api/target/classes/application.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lsk-api/target/classes/top/fixyou/api/LskApiApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/lsk-api/target/classes/top/fixyou/api/LskApiApplication.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lsk-api/target/classes/top/fixyou/api/controller/TestController.class" beforeDir="false" afterPath="$PROJECT_DIR$/lsk-api/target/classes/top/fixyou/api/controller/TestController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -19,12 +28,19 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="CompilerWorkspaceConfiguration">
+    <option name="MAKE_PROJECT_ON_SAVE" value="true" />
+  </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
+  </component>
+  <component name="JRebelWorkspace">
+    <option name="jrebelEnabledAutocompile" value="true" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -40,7 +56,9 @@
     </option>
   </component>
   <component name="ProjectId" id="2MIuqqoUX2JgzGGErwxCl3nTJV1" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -55,18 +73,30 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
     "jdk.selected.JAVA_MODULE": "1.8",
+    "last_opened_file_path": "D:/Desktop/working/lsk-services",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "spring.boot",
-    "spring.configuration.checksum": "47c1672e2325db0ae4953f1994cead4b",
+    "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings",
+    "spring.configuration.checksum": "7f2b9d0bf1c0c19b5f65e66afea5cb53",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
   <component name="RebelAgentSelection">
     <selection>jr</selection>
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Desktop\working\lsk-services" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Desktop\working\lsk-services\lsk-api\src\main\resources" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="top.fixyou.base.result" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="configurationTypes">
@@ -75,10 +105,24 @@
       </set>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Spring Boot.LskApiApplication">
     <configuration name="LskApiApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="lsk-api" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="top.fixyou.api.LskApiApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LskBaseApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="lsk-base" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="top.fixyou.base.LskBaseApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LskMailApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="lsk-mail" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="top.fixyou.mail.LskMailApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -97,12 +141,21 @@
       <workItem from="1677469509412" duration="847000" />
       <workItem from="1677470362768" duration="1604000" />
       <workItem from="1677473417494" duration="202000" />
-      <workItem from="1677473625369" duration="343000" />
+      <workItem from="1677473625369" duration="1024000" />
+      <workItem from="1677479431867" duration="14256000" />
+      <workItem from="1677542565109" duration="312000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <ignored-roots>
+      <path value="$PROJECT_DIR$/lsk-api" />
+      <path value="$PROJECT_DIR$/lsk-base" />
+      <path value="$PROJECT_DIR$/lsk-mail" />
+    </ignored-roots>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

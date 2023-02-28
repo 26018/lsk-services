@@ -18,6 +18,8 @@ public class TestController {
 
     @GetMapping("/info")
     public String info() {
-        return "Lsk-service 是项目中一些常用服务的集合";
+        return "Lsk-service 是项目中一些常用服务的集合" + "<br>" +
+                "您可以通过远程调用来使用这些服务。";
     }
+
 }

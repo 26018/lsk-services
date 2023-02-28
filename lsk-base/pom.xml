@@ -7,10 +7,10 @@
         <artifactId>lsk-services</artifactId>
         <version>0.0.1-SNAPSHOT</version>
     </parent>
-    <artifactId>lsk-api</artifactId>
+    <artifactId>lsk-base</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>lsk-api</name>
-    <description>lsk-api</description>
+    <name>lsk-base</name>
+    <description>lsk-base</description>
     <properties>
         <java.version>1.8</java.version>
     </properties>
@@ -18,18 +18,6 @@
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>top.fixyou</groupId>
-            <artifactId>lsk-base</artifactId>
-            <version>0.0.1-SNAPSHOT</version>
-            <scope>compile</scope>
-        </dependency>
-        <dependency>
-            <groupId>top.fixyou</groupId>
-            <artifactId>lsk-mail</artifactId>
-            <version>0.0.1-SNAPSHOT</version>
-            <scope>compile</scope>
         </dependency>
 
     </dependencies>

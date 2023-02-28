@@ -4,6 +4,8 @@
     <option name="originalFiles">
       <list>
         <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/lsk-mail/pom.xml" />
+        <option value="$PROJECT_DIR$/lsk-base/pom.xml" />
       </list>
     </option>
   </component>

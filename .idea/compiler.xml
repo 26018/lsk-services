@@ -7,17 +7,23 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="lsk-base" />
         <module name="lsk-api" />
+        <module name="lsk-mail" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="lsk-api" target="1.8" />
+      <module name="lsk-base" target="1.8" />
+      <module name="lsk-mail" target="1.8" />
       <module name="lsk-services" target="1.8" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="lsk-api" options="-parameters" />
+      <module name="lsk-base" options="-parameters" />
+      <module name="lsk-mail" options="-parameters" />
     </option>
   </component>
 </project>

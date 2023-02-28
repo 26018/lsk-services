@@ -20,6 +20,8 @@
 
     <modules>
         <module>lsk-api</module>
+        <module>lsk-base</module>
+        <module>lsk-mail</module>
     </modules>
 
 

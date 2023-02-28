@@ -3,6 +3,8 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/lsk-api/lsk-api.iml" filepath="$PROJECT_DIR$/lsk-api/lsk-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lsk-base/lsk-base.iml" filepath="$PROJECT_DIR$/lsk-base/lsk-base.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lsk-mail/lsk-mail.iml" filepath="$PROJECT_DIR$/lsk-mail/lsk-mail.iml" />
       <module fileurl="file://$PROJECT_DIR$/lsk-services.iml" filepath="$PROJECT_DIR$/lsk-services.iml" />
     </modules>
   </component>
