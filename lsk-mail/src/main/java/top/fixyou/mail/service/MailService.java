@@ -2,6 +2,7 @@ package top.fixyou.mail.service;
 
 import top.fixyou.mail.entity.MailRequest;
 
+import javax.mail.MessagingException;
 import java.util.List;
 
 /**
@@ -17,6 +18,6 @@ public interface MailService {
      * 发送模板邮件
      * @param mailRequest 请求参数
      */
-    void send(MailRequest mailRequest);
+    void send(MailRequest mailRequest) throws MessagingException;
 
 }

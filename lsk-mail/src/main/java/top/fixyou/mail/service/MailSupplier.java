@@ -8,10 +8,7 @@ import top.fixyou.mail.entity.MailProperty;
 
 import javax.annotation.PostConstruct;
 import javax.annotation.Resource;
-import javax.mail.Authenticator;
-import javax.mail.PasswordAuthentication;
-import javax.mail.Session;
-import javax.mail.Transport;
+import javax.mail.*;
 import java.lang.reflect.Field;
 import java.util.*;
 
@@ -69,7 +66,7 @@ public class MailSupplier {
                     field.setAccessible(true);
                     properties.put(MAIL_PREFIX + field.getName(), String.valueOf(field.get(mailProperty)));
                 }
-                Session session = Session.getDefaultInstance(properties, new Authenticator() {
+                Session session = Session.getInstance(properties, new Authenticator() {
                     @Override
                     protected PasswordAuthentication getPasswordAuthentication() {
                         return new PasswordAuthentication(mailProperty.getUsername(), mailProperty.getPassword());
@@ -79,7 +76,7 @@ public class MailSupplier {
                 transport.connect(mailProperty.getHost(), mailProperty.getUsername(), mailProperty.getPassword());
                 connectors.add(new MailConnector(session, transport, properties));
             } catch (Exception e) {
-                log.error("邮箱连接异常:{}", e.getMessage());
+                log.error("邮箱{}连接异常:{}", mailProperty.getUsername(), e.getMessage());
             }
         });
         return connectors;
@@ -89,13 +86,18 @@ public class MailSupplier {
     /**
      * 提供一个邮件连接器
      */
-    public MailConnector provide() {
-        // 等待5s
+    public MailConnector provide() throws MessagingException {
         long startTimeMillis = System.currentTimeMillis();
         while (startTimeMillis + MAX_WAIT_TIMEOUT > System.currentTimeMillis()) {
             MailConnector peek = ARRAY_DEQUE.peek();
+            // 检查peek的连接状态
             if (Objects.nonNull(peek)) {
-                return ARRAY_DEQUE.pop();
+                // 若该连接是连接状态
+                if (peek.getTransport().isConnected()) {
+                    return ARRAY_DEQUE.pop();
+                } else {
+                    peek.getTransport().connect();
+                }
             }
         }
         throw new RuntimeException("暂无可用的邮件连接器");
@@ -107,5 +109,4 @@ public class MailSupplier {
     public void deprive(MailConnector connector) {
         ARRAY_DEQUE.add(connector);
     }
-
 }

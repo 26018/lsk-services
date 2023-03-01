@@ -11,6 +11,7 @@ import top.fixyou.mail.service.MailSupplier;
 
 import javax.annotation.Resource;
 import javax.mail.Message;
+import javax.mail.MessagingException;
 import javax.mail.Session;
 import javax.mail.Transport;
 import javax.mail.internet.InternetAddress;
@@ -38,7 +39,7 @@ public class MailServiceImpl implements MailService {
      * @param mailRequest 请求参数
      */
     @Override
-    public void send(MailRequest mailRequest) {
+    public void send(MailRequest mailRequest) throws MessagingException {
         MailConnector provide = mailSupplier.provide();
         try {
             Session session = provide.getSession();
@@ -77,7 +78,13 @@ public class MailServiceImpl implements MailService {
     public void asyncSend(MailRequest mailRequest) {
         // TODO 改为线程池
         @SuppressWarnings("AlibabaAvoidManuallyCreateThread")
-        Thread thread = new Thread(() -> send(mailRequest));
+        Thread thread = new Thread(() -> {
+            try {
+                send(mailRequest);
+            } catch (MessagingException e) {
+                throw new RuntimeException(e);
+            }
+        });
         thread.start();
     }
 }

@@ -1,11 +1,10 @@
 package top.fixyou.api.controller;
 
 import org.springframework.web.bind.annotation.*;
+import top.fixyou.base.annotation.NoRepeatCommit;
 import top.fixyou.base.result.ResponseResult;
-import top.fixyou.mail.config.MailConfiguration;
 import top.fixyou.mail.entity.MailProperty;
 import top.fixyou.mail.entity.MailRequest;
-import top.fixyou.mail.service.MailSupplier;
 import top.fixyou.mail.service.impl.MailServiceImpl;
 
 import javax.annotation.Resource;
@@ -32,7 +31,8 @@ public class MailController {
     }
 
     @GetMapping("/connector-info")
-    public ResponseResult<List<MailProperty>> connectorsInfo() {
-        return ResponseResult.ok(null);
+    @NoRepeatCommit(key = "mail-info.{request.title}.{id}", timeout = 30 * 1000)
+    public ResponseResult<List<MailProperty>> connectorsInfo(MailRequest request, Long id) {
+        return ResponseResult.ok();
     }
 }

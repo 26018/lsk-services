@@ -1,13 +1,13 @@
 <component name="libraryTable">
   <library name="Maven: org.springframework.boot:spring-boot-starter-json:2.7.10-SNAPSHOT">
     <CLASSES>
-      <root url="jar://$PROJECT_DIR$/../../../software/maven/MavenRepository/org/springframework/boot/spring-boot-starter-json/2.7.10-SNAPSHOT/spring-boot-starter-json-2.7.10-20230224.181014-3.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../../software/maven/MavenRepository/org/springframework/boot/spring-boot-starter-json/2.7.10-SNAPSHOT/spring-boot-starter-json-2.7.10-20230227.142342-4.jar!/" />
     </CLASSES>
     <JAVADOC>
-      <root url="jar://$PROJECT_DIR$/../../../software/maven/MavenRepository/org/springframework/boot/spring-boot-starter-json/2.7.10-SNAPSHOT/spring-boot-starter-json-2.7.10-20230224.181014-3-javadoc.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../../software/maven/MavenRepository/org/springframework/boot/spring-boot-starter-json/2.7.10-SNAPSHOT/spring-boot-starter-json-2.7.10-20230227.142342-4-javadoc.jar!/" />
     </JAVADOC>
     <SOURCES>
-      <root url="jar://$PROJECT_DIR$/../../../software/maven/MavenRepository/org/springframework/boot/spring-boot-starter-json/2.7.10-SNAPSHOT/spring-boot-starter-json-2.7.10-20230224.181014-3-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../../software/maven/MavenRepository/org/springframework/boot/spring-boot-starter-json/2.7.10-SNAPSHOT/spring-boot-starter-json-2.7.10-20230227.142342-4-sources.jar!/" />
     </SOURCES>
   </library>
 </component>
